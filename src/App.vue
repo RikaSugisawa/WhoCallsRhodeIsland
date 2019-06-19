@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <md-app>
+    <md-app id="md-app">
       <md-app-toolbar class="md-primary">
         <span class="md-title">Who Calls Rhode Island</span>
       </md-app-toolbar>
@@ -12,4 +12,7 @@
 </template>
 
 <style lang="scss">
+  #md-app {
+    height: 100%;
+  }
 </style>

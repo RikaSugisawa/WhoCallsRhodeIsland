@@ -5,11 +5,16 @@ import store from './store'
 // @ts-ignore
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default-dark.css'
-// @ts-ignore
-import Metro from 'metro4/js/metro'
+import 'vue-material/dist/theme/default.css'
+import {library} from '@fortawesome/fontawesome-svg-core'
+import * as fas from '@fortawesome/free-solid-svg-icons'
+import _ from 'lodash'
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
 Vue.use(VueMaterial)
+// @ts-ignore
+library.add(fas.faHeart)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 
